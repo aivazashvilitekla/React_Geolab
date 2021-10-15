@@ -3,30 +3,31 @@
     src: url(assets/fonts/Inter/Inter-Regular.ttf);
 }
 header{
-    /* width: 84%;
-    margin: auto; */
-    /* margin: 5% 0 0 5%; */
+    width: 100%;
+    padding: 2% 13%;
 }
 main{
-    width: 95%;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-family: Inter;
 }
 aside{
     width: 40%;
+}
+.left{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 6%;
 }
 .pic{
     align-self: flex-end;
     position: relative;
     bottom: 10%;
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
 }
 .container{
     width: 500px;
@@ -34,7 +35,6 @@ aside{
     box-sizing: border-box;
     border-radius: 16px;
     padding: 24px;
-    font-family: Inter;
     font-style: italic;
     font-weight: normal;
 }
@@ -45,12 +45,134 @@ aside{
 .author{
     color: rgba(21, 101, 216, 0.6);
 }
-span{
+.quotes{
     font-size: 36px;
     color: blue;
     font-weight: bold;
     line-height: 10px;
 }
-aside{
-    /* border: 1px solid red; */
+
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 42px;
+    font-weight: bold;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.join p{
+    color: #8692A6;
+    text-align: center;
+    margin: 3% 0;
+}
+.social{
+    display: flex;
+    margin: 9% 0;
+}
+.social div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3% 0;
+}
+.or p{
+    margin: 0 6px;
+    color: #BABABA;
+    font-size: 12px;
+}
+.line{
+    width: 166px;
+    height: 1px;
+    border: 1px solid #F5F5F5;
+}
+/* form */
+.sign-up{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: #696F79;
+    cursor: pointer;
+}
+input:not(input[type='checkbox']){
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5%;
+    box-sizing: border-box;
+    border: 1px solid #8692A6;
+    border-radius: 6px;
+}
+input[type='password']{
+    letter-spacing: 3px;
+}
+.outer{
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: #C4C4C4;
+}
+.inner{
+    width: 65%;
+    height: 4px;
+    background: #FFC107;
+    border-radius: 4px;
+}
+.message p{
+    color: #FFC107;
+    margin-top: 4px;
+    font-size: 13px;
+}
+form span{
+    color: #1565D8;
+    text-decoration: underline;
+}
+input[type='checkbox']{
+    width: 24px;
+    height: 24px;
+    vertical-align: -7px;
+}
+#terms{
+    margin-top: 5%;
+}
+#news{
+    margin-bottom: 5%;
+}
+#submit{
+    height: 55px;
+    margin-bottom: 5%;
+    background: #1565D8;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 !important;
+}
+.log-in p{
+    color: #696F79;
+    text-align: center;
 }
