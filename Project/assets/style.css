@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url(./fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main .head {
+  background: url(./images/1.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 840px;
+  position: relative;
+}
+
+main .head .text {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+
+main .head h1 {
+  font-family: 'Oswald';
+  color: white;
+  font-size: 96px;
+  margin-bottom: 3%;
+}
+
+main .head .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+main .head .icons i {
+  padding: 2%;
+  cursor: pointer;
+}
+
+main .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .banner .content {
+  width: 100%;
+  background: #eac61e;
+  padding: 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .content .left-arrow, main .banner .content .right-arrow {
+  margin: 2%;
+  color: white;
+  cursor: pointer;
+}
+
+main .banner .content .left-arrow :hover, main .banner .content .right-arrow :hover {
+  color: gray;
+}
+
+main .banner .content .center-content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 2fr 2fr 3fr;
+      grid-template-columns: 2fr 2fr 3fr;
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+}
+
+main .banner .content .center-content > div {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .content .center-content > div h2 {
+  font-family: 'Oswald';
+  font-size: 48px;
+}
+
+main .banner .content .center-content > div img {
+  width: 70%;
+  height: inherit;
+}
+
+main .banner .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 2%;
+}
+
+main .banner .slides > div {
+  margin: 0 2%;
+  width: 40px;
+  height: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+main .banner .slides :hover {
+  background: gray;
+}
+
+main .booking {
+  width: 80%;
+  margin: 5% auto;
+}
+
+main .booking .booking-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .booking .booking-content > div {
+  width: 48%;
+}
+
+main .booking .booking-content .booking-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .booking .booking-content .booking-text h2 {
+  font-family: 'Oswald';
+  font-size: 48px;
+}
+
+main .booking .booking-content .booking-text p {
+  font-family: 'OpenSans';
+  margin: 3% 0;
+  width: 70%;
+}
+
+main .booking .booking-content .booking-text a {
+  font-family: 'OpenSans';
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+main .gallery {
+  background: #f2f2f2;
+}
+
+main .gallery .gallery-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0;
+}
+
+main .gallery .gallery-text h2 {
+  font-family: 'Oswald';
+  font-size: 48px;
+}
+
+main .gallery .gallery-text p {
+  text-align: center;
+  width: 50%;
+  font-family: 'OpenSans';
+  margin: 1% 0;
+}
+
+main .gallery .gallery-pics {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  row-gap: 2%;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+}
+
+main .gallery .gallery-pics div {
+  cursor: pointer;
+  position: relative;
+}
+
+main .gallery .gallery-pics div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+main .gallery .gallery-pics div :hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+main .locations {
+  width: 100%;
+}
+
+main .locations .boxes {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .locations .boxes > div {
+  width: 33.33%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .locations .boxes > div h3 {
+  font-size: 24px;
+}
+
+main .locations .boxes > div h2 {
+  font-family: 'Oswald';
+  font-size: 36px;
+  margin: 2% 0;
+}
+
+main .locations .boxes > div p {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+main .locations .boxes > div a {
+  font-family: 'OpenSans';
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+main .locations .boxes .booking {
+  background: #eac61e;
+}
+
+main .locations .boxes .location {
+  background: #7eb9a3;
+  color: white;
+}
+
+main .locations .boxes .location a {
+  color: white;
+}
+
+main .locations .boxes .check-in {
+  background: #1d5c40;
+}
+
+main .locations .map {
+  background: url(./images/12.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 5% 0;
+}
+
+main .locations .map .map-content {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+main .locations .map .map-content > div {
+  width: 48%;
+}
+
+main .locations .map .map-content > div h2 {
+  font-family: 'Oswald';
+  font-size: 48px;
+}
+
+main .locations .map .map-content > div p {
+  width: 60%;
+  margin: 3% 0;
+}
+
+main .locations .map .map-content > div a {
+  font-family: 'OpenSans';
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
