@@ -33,6 +33,7 @@ header .container .logo {
 
 header .container .logo img {
   width: 70%;
+  margin: 2% 0;
 }
 
 header .container nav {
@@ -254,6 +255,7 @@ main .booking .booking-content .booking-text a {
 
 main .gallery {
   background: #f2f2f2;
+  padding: 2%;
 }
 
 main .gallery .gallery-text {
@@ -270,7 +272,7 @@ main .gallery .gallery-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 main .gallery .gallery-text h2 {

@@ -27,7 +27,6 @@ body{
 header{
     width: 100%;
     background: #0000008e;
-    // position: absolute;
     z-index: 54445;
     .container{
         width: 50%;
@@ -38,7 +37,7 @@ header{
             width: 18%;
             img{
                 width: 70%;
-            
+                margin: 2% 0;
             }
         }
         nav{
@@ -187,12 +186,13 @@ main{
     // Section Gallery
     .gallery{
         background: #f2f2f2;
+        padding: 2%;
         .gallery-text{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 5% 0;
+            padding: 3% 0;
             h2{
                 @include h2-h();
             }
