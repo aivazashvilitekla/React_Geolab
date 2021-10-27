@@ -10,7 +10,19 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header></header>
+    <header style="position: absolute;">
+        <div class="container">
+            <div class="logo"><img src="assets/images/logo2.png" alt=""></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="head">
             <div class="text">
@@ -140,6 +152,77 @@
                 </div>
             </div>
         </section>
+        <section class="contact">
+            <div class="contact-form">
+                <div class="heading">
+                    <h2>Please complete the form</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cumque deleniti quo dolorem cum eos.</h3>
+                </div>
+                <form>
+                    <div class="top">
+                        <div>
+                            <label for="name">Your Name*</label> <br>
+                            <input type="text" name="name">
+                        </div>
+                        <!--  -->
+                        <div>
+                            <label for="phone">Your Phone*</label> <br>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <br>
+                            <label for="name">Your Email*</label> <br>
+                            <input type="text" name="name">
+                        </div>
+                        <!--  -->
+                        <div>
+                            <br>
+                            <label for="name">Your Address</label> <br>
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div>
+                        <br><br>
+                        <label for="textarea">How can we help you?</label> <br> <br>
+                        <textarea name="textarea" ></textarea> <br><br>
+                    </div>
+                    <label for="">Related Service</label> <br><br>
+                    <div class="bottom">
+                        <div>
+                            <input type="checkbox" name="dev"> <label for="dev">Website Development</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="con"> <label for="con">Content Marketing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="web"> <label for="web">Turn-Key Website</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="rep"> <label for="rep">Online Reputation Management</label>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+        </section>
     </main>
+    <footer>
+        <nav>
+            <div class=" left">
+                <ul class="flex">
+                    <li><a href="#">Credits</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Our Teams</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="assets/images/logo2.png" alt="logo">
+            </div>
+            <div class="right">
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>
