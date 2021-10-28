@@ -789,5 +789,13 @@ footer nav .logo img {
     width: 100%;
     height: auto;
   }
+  footer nav {
+    width: 100%;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
