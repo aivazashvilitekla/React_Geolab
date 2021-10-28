@@ -29,19 +29,61 @@ header{
     background: #0000008e;
     z-index: 54445;
     .container{
-        width: 50%;
+        width: 100%;
         margin: auto;
         display: flex;
-        .logo {
-            // border: 1px solid red;
-            width: 18%;
-            img{
-                width: 70%;
-                margin: 2% 0;
+        padding: 0.5% 0;
+        >div{
+            width: 50%;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            .earth {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background: #1b70ad url('images/earth.png');
+                background-size: cover;
+                border-radius: 50%;
+                box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.85);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s;
+                animation: animate 12s linear infinite;
+                ::before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background: url(images/cloud.png);
+                    background-size: cover;
+                    animation: animate 18s linear infinite;
+                    z-index: 1;
+                }
+                img{
+                    position: absolute;
+                    z-index: 2;
+                    transition: 0.5s;
+                    pointer-events: none;
+                    transform: rotate(-90deg);
+                    width: 50%;
+                }
+            }
+        }
+        @keyframes animate{
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: 719px 0;
             }
         }
         nav{
-            width: 48%;
+            width: 80%;
             // border: 1px solid red;
             ul{
                 width: 100%;
@@ -63,6 +105,9 @@ header{
                     }
                 }
             }
+        }
+        .burger-menu{
+            display: none;
         }
     }
 }
@@ -207,7 +252,7 @@ main{
             width: 90%;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             row-gap: 2%;
             column-gap: 1%;
             div{
@@ -403,6 +448,126 @@ footer{
             img{
                 width: 10%;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1800px)  {
+    main{
+        .booking{
+            .booking-content{
+                div img{
+                    width: 70%;
+                }
+            }
+        }
+        .locations{
+            .map{
+                .map-content{
+                    >div{
+                        width: auto;
+                    }
+                    flex-direction: column;
+                    .map-text{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px)  {
+    main{
+        .banner{
+            .content{
+                .center-content{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    div p{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 670px){
+    header{
+        .container{
+            nav{
+                display: none;
+            }
+            .burger-menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+    }
+    main{
+        .banner{
+            .content{
+                .center-content{
+                    .h2-heading, .p-text{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .booking{
+            width: 100%;
+            margin: 0;
+            .booking-content{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 2%;
+                }
+            }
+        }
+    }
+    .gallery{
+        .gallery-text{
+            text-align: center;
+            h2{
+                font-size: 0.5em;
+            }
+        }
+    }
+    .map-div{
+        iframe{
+            width: 100%;
+        }
+    }
+    main .contact .contact-form form .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 490px){
+    .locations{
+        .boxes{
+            flex-direction: column;
+            width: 100%;
+            .booking, .location, .check-in{
+                padding: 2% 0;
+                margin: 0;
+                width: 100%;
+                height: auto;
             }
         }
     }

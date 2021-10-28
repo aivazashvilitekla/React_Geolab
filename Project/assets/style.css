@@ -20,24 +20,96 @@ header {
 }
 
 header .container {
-  width: 50%;
+  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0.5% 0;
+}
+
+header .container > div {
+  width: 50%;
 }
 
 header .container .logo {
-  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-header .container .logo img {
-  width: 70%;
-  margin: 2% 0;
+header .container .logo .earth {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #1b70ad url("images/earth.png");
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.85);
+          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: animate 12s linear infinite;
+          animation: animate 12s linear infinite;
+}
+
+header .container .logo .earth ::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(images/cloud.png);
+  background-size: cover;
+  -webkit-animation: animate 18s linear infinite;
+          animation: animate 18s linear infinite;
+  z-index: 1;
+}
+
+header .container .logo .earth img {
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 50%;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 719px 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 719px 0;
+  }
 }
 
 header .container nav {
-  width: 48%;
+  width: 80%;
 }
 
 header .container nav ul {
@@ -68,6 +140,10 @@ header .container nav ul li a {
 
 header .container nav ul li :hover {
   color: gray;
+}
+
+header .container .burger-menu {
+  display: none;
 }
 
 main .head {
@@ -292,8 +368,8 @@ main .gallery .gallery-pics {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 2%;
   -webkit-column-gap: 1%;
           column-gap: 1%;
@@ -581,5 +657,137 @@ footer nav .logo {
 footer nav .logo img {
   width: 10%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1800px) {
+  main .booking .booking-content div img {
+    width: 70%;
+  }
+  main .locations .map .map-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .locations .map .map-content > div {
+    width: auto;
+  }
+  main .locations .map .map-content .map-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .banner .content .center-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  main .banner .content .center-content div p {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  header .container nav {
+    display: none;
+  }
+  header .container .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  main .banner .content .center-content .h2-heading, main .banner .content .center-content .p-text {
+    display: none;
+  }
+  main .booking {
+    width: 100%;
+    margin: 0;
+  }
+  main .booking .booking-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .booking .booking-content div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .gallery .gallery-text {
+    text-align: center;
+  }
+  .gallery .gallery-text h2 {
+    font-size: 0.5em;
+  }
+  .map-div iframe {
+    width: 100%;
+  }
+  main .contact .contact-form form .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .locations .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .locations .boxes .booking, .locations .boxes .location, .locations .boxes .check-in {
+    padding: 2% 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
