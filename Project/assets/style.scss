@@ -559,6 +559,9 @@ footer{
     
 }
 @media only screen and (max-width: 490px){
+    main .head h1{
+        font-size: 40px;
+    }
     .locations{
         .boxes{
             flex-direction: column;
@@ -579,3 +582,4 @@ footer{
         }
     }
 }
+// @media only screen and (max-width: 490px)

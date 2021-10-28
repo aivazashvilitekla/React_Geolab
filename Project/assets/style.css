@@ -776,6 +776,9 @@ footer nav .logo img {
 }
 
 @media only screen and (max-width: 490px) {
+  main .head h1 {
+    font-size: 40px;
+  }
   .locations .boxes {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
