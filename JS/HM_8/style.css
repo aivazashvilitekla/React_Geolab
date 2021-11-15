@@ -1,0 +1,36 @@
+.list{
+    width: 100%;
+    padding: 5%;
+}
+form{
+    width: 50%;
+    margin: auto;
+}
+input{
+    width: 60%;
+    padding: 1%;
+    border-radius: 5px;
+}
+button{
+    padding: 1%;
+    background: plum;
+    border-radius: 5px;
+}
+.list-container{
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+#newDiv{
+    display: flex;
+    align-items: center;
+}
+#newDiv button{
+    margin-left: 5%;
+    padding: 0.5%;
+}
+#h3{
+    color: red;
+}
