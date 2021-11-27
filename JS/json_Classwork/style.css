@@ -1,0 +1,7 @@
+#parent div{
+    border: 1px solid black;
+}
+
+#parent div h2{
+    color: red;
+}
